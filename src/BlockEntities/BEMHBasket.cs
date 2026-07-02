@@ -15,7 +15,7 @@ public abstract class BEMHBasket : BEBaseFSBasket
         get;
         set
         {
-            if (field?.Equals(value) ?? false) return;;
+            if (field?.Equals(value) ?? false) return;
 
             field = value;
             MarkMeshesDirty();
