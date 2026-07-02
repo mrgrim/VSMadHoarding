@@ -1,0 +1,16 @@
+{
+  "type": "code",
+  "side": "universal",
+  "requiredOnClient": true,
+  "requiredOnServer": true,
+  "modid": "madhoarding",
+  "name": "Mad Hoarding",
+  "description": "An extension to Food Shelves and Purposeful Storage to increase capacity of some containers and alter some interactions.",
+  "authors": [ "MadSeraph" ],
+  "version": "1.0.0",
+  "dependencies": {
+      "game": "1.22.0",
+      "foodshelves": "3.0.4",
+      "madfoundation": "1.1.0"
+  }
+}

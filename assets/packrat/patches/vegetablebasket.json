@@ -1,0 +1,30 @@
+[
+    {
+        "file": "foodshelves:blocktypes/baskets/vegetablebasket.json",
+        "op": "replace",
+        "path": "/entityclass",
+        "value": "MadHoarding.BEMHVegetableBasket",
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    },
+    {
+        "file": "foodshelves:blocktypes/baskets/vegetablebasket.json",
+        "op": "replace",
+        "path": "/class",
+        "value": "MadHoarding.MHVegetableBasket",
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    },
+    {
+        "file": "foodshelves:blocktypes/baskets/vegetablebasket.json",
+        "op": "remove",
+        "path": "/behaviors",
+        "value": { "name": "RightClickPickup" },
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    },
+    {
+        "file": "foodshelves:blocktypes/baskets/vegetablebasket.json",
+        "op": "addmerge",
+        "path": "/behaviors",
+        "value": [ { "name": "MadHoarding.ShiftRightClickPickupWhenEmpty" } ],
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "foodshelves:blocktypes/coolers/coolingcabinet.json",
+    "op": "replace",
+    "path": "/entityclass",
+    "value": "MadHoarding.BEMHCoolingCabinet",
+    "dependsOn": [ { "modid": "foodshelves" } ]
+  },
+  {
+    "file": "foodshelves:blocktypes/coolers/coolingcabinet.json",
+    "op": "replace",
+    "path": "/class",
+    "value": "MadHoarding.MHCoolingCabinet",
+    "dependsOn": [ { "modid": "foodshelves" } ]
+  }
+
+]
