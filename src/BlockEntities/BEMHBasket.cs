@@ -149,9 +149,9 @@ public abstract class BEMHBasket : BEBaseFSBasket
         return result;
     }
     
-    public override void OnBlockPlaced(ItemStack byItemStack)
+    public override void OnBlockPlaced(ItemStack? byItemStack)
     {
-        if (byItemStack.Attributes["FSLockedCode"] is { } attribute)
+        if (byItemStack?.Attributes["FSLockedCode"] is { } attribute)
             LockedCode = new AssetLocation(attribute.ToString());
         base.OnBlockPlaced(byItemStack);
     }

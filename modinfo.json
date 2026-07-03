@@ -7,7 +7,7 @@
   "name": "Mad Hoarding",
   "description": "An extension to Food Shelves and Purposeful Storage to increase capacity of some containers and alter some interactions.",
   "authors": [ "MadSeraph" ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
       "game": "1.22.0",
       "foodshelves": "3.0.4",
