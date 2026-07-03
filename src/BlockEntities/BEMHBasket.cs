@@ -34,6 +34,15 @@ public abstract class BEMHBasket : BEBaseFSBasket
     }
     
     public CollectibleObject? LockedCollectible { get; set; }
+
+    public override void Initialize(ICoreAPI api)
+    {
+        base.Initialize(api);
+        
+        if (!inv.Empty && LockedCollectible is null
+                       && inv.FirstOrDefault(s => s.Itemstack?.Collectible?.CanStoreInSlot(AttributeCheck) ?? false) is { } invSlot)
+            LockedCode = invSlot.Itemstack?.Collectible.Code;
+    }
     
     public int CalculateItemsPerStack(int defaultItemsPerStack) =>
         LockedCollectible is null ? defaultItemsPerStack : (int)Math.Ceiling(LockedCollectible.MaxStackSize * 8.0 / ItemsPerSegment);

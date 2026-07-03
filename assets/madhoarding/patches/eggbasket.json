@@ -1,30 +1,16 @@
 [
-  {
-    "file": "foodshelves:blocktypes/baskets/eggbasket.json",
-    "op": "replace",
-    "path": "/entityclass",
-    "value": "MadHoarding.BEMHEggBasket",
-    "dependsOn": [ { "modid": "foodshelves" } ]
-  },
-  {
-    "file": "foodshelves:blocktypes/baskets/eggbasket.json",
-    "op": "replace",
-    "path": "/class",
-    "value": "MadHoarding.MHEggBasket",
-    "dependsOn": [ { "modid": "foodshelves" } ]
-  },
-  {
-    "file": "foodshelves:blocktypes/baskets/eggbasket.json",
-    "op": "remove",
-    "path": "/behaviors",
-    "value": { "name": "RightClickPickup" },
-    "dependsOn": [ { "modid": "foodshelves" } ]
-  },
-  {
-    "file": "foodshelves:blocktypes/baskets/eggbasket.json",
-    "op": "addmerge",
-    "path": "/behaviors",
-    "value": [ { "name": "MadHoarding.ShiftRightClickPickupWhenEmpty" } ],
-    "dependsOn": [ { "modid": "foodshelves" } ]
-  }
+    {
+        "file": "foodshelves:blocktypes/baskets/eggbasket.json",
+        "op": "remove",
+        "path": "/behaviors",
+        "value": { "name": "RightClickPickup" },
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    },
+    {
+        "file": "foodshelves:blocktypes/baskets/eggbasket.json",
+        "op": "addmerge",
+        "path": "/behaviors",
+        "value": [ { "name": "MadHoarding.ShiftRightClickPickupWhenEmpty" } ],
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    }
 ]

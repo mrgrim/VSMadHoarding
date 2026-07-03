@@ -21,19 +21,19 @@ public class MadHoarding : ModSystem
         
         Api = api;
         
-        api.RegisterBlockEntityClass("MadHoarding.BEMHVegetableBasket", typeof(BEMHVegetableBasket));
-        api.RegisterBlockEntityClass("MadHoarding.BEMHFruitBasket", typeof(BEMHFruitBasket));
-        api.RegisterBlockEntityClass("MadHoarding.BEMHMushroomBasket", typeof(BEMHMushroomBasket));
-        api.RegisterBlockEntityClass("MadHoarding.BEMHEggBasket", typeof(BEMHEggBasket));
-        api.RegisterBlockEntityClass("MadHoarding.BEMHDoubleShelf", typeof(BEMHDoubleShelf));
-        api.RegisterBlockEntityClass("MadHoarding.BEMHCoolingCabinet", typeof(BEMHCoolingCabinet));
+        api.RegisterBlockEntityClass("FoodShelves.BEVegetableBasket", typeof(BEMHVegetableBasket));
+        api.RegisterBlockEntityClass("FoodShelves.BEFruitBasket", typeof(BEMHFruitBasket));
+        api.RegisterBlockEntityClass("FoodShelves.BEMushroomBasket", typeof(BEMHMushroomBasket));
+        api.RegisterBlockEntityClass("FoodShelves.BEEggBasket", typeof(BEMHEggBasket));
+        api.RegisterBlockEntityClass("FoodShelves.BEDoubleShelf", typeof(BEMHDoubleShelf));
+        api.RegisterBlockEntityClass("FoodShelves.BECoolingCabinet", typeof(BEMHCoolingCabinet));
         
-        api.RegisterBlockClass("MadHoarding.MHVegetableBasket", typeof(MHVegetableBasket));
-        api.RegisterBlockClass("MadHoarding.MHFruitBasket", typeof(MHFruitBasket));
-        api.RegisterBlockClass("MadHoarding.MHMushroomBasket", typeof(MHMushroomBasket));
-        api.RegisterBlockClass("MadHoarding.MHEggBasket", typeof(MHEggBasket));
-        api.RegisterBlockClass("MadHoarding.MHDoubleShelf", typeof(MHDoubleShelf));
-        api.RegisterBlockClass("MadHoarding.MHCoolingCabinet", typeof(MHCoolingCabinet));
+        api.RegisterBlockClass("FoodShelves.BlockVegetableBasket", typeof(MHVegetableBasket));
+        api.RegisterBlockClass("FoodShelves.BlockFruitBasket", typeof(MHFruitBasket));
+        api.RegisterBlockClass("FoodShelves.BlockMushroomBasket", typeof(MHMushroomBasket));
+        api.RegisterBlockClass("FoodShelves.BlockEggBasket", typeof(MHEggBasket));
+        api.RegisterBlockClass("FoodShelves.BlockDoubleShelf", typeof(MHDoubleShelf));
+        api.RegisterBlockClass("FoodShelves.BlockCoolingCabinet", typeof(MHCoolingCabinet));
         
         api.RegisterBlockBehaviorClass("MadHoarding.ShiftRightClickPickupWhenEmpty", typeof(BlockBehaviorShiftRightClickPickupWhenEmpty));
         

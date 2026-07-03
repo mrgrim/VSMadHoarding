@@ -1,14 +1,14 @@
 [
-  {
-    "file": "foodshelves:config/restrictions/general/holderuniversal.json",
-    "op": "addmerge",
-    "path": "/CollectibleTypes",
-    "value": [
-      "foodshelves:MHVegetableBasket",
-      "foodshelves:MHFruitBasket",
-      "foodshelves:MHMushroomBasket",
-      "foodshelves:MHEggBasket"
-    ],
-    "dependsOn": [ { "modid": "foodshelves" } ]
-  }
+    {
+        "file": "foodshelves:config/restrictions/general/holderuniversal.json",
+        "op": "addmerge",
+        "path": "/CollectibleTypes",
+        "value": [
+            "foodshelves:MHVegetableBasket",
+            "foodshelves:MHFruitBasket",
+            "foodshelves:MHMushroomBasket",
+            "foodshelves:MHEggBasket"
+        ],
+        "dependsOn": [ { "modid": "foodshelves" } ]
+    }
 ]
