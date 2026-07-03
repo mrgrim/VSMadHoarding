@@ -11,7 +11,7 @@
   "dependencies": {
       "game": "1.22.0",
       "foodshelves": "3.0.4",
-      "purposefulstorage": "1.0.0",
+      "purposefulstorage": "2.0.1",
       "madfoundation": "1.1.0"
   }
 }
